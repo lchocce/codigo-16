@@ -2,3 +2,5 @@ Hola, mi nombre es
 Luis Chocce
 Usuario: 1234
 Direccíon: 123 av 
+cel: 9999
+Url: 1223
