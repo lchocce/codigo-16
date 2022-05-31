@@ -1,2 +1,4 @@
 Hola, mi nombre es
 Luis Chocce
+Usuario: 1234
+Direccíon: 123 av 
