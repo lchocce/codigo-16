@@ -12,30 +12,35 @@
     </h1>
     <hr>
     <!-- TABLA DE USUARIO -->
-    <table>
+    <table border="1" cellpadding="10" cellspacing="0">
         <!-- Primera fila: Cabeceras -->
         <tr><!-- table rule -->
-            <td><!-- table data -->
-                ID
-            </td>
-            <td>
-                Nombre
-            </td>
-            <td>
-                Edad
-            </td>
+            <th >ID</th> 
+            <th>Nombre</th>
+            <th>Edad</th>
         </tr>
         <!-- Segunda fila -->
         <tr>
-            <td>41882835</td>
+            <!-- rowspan es para unir dos celdas verticales -->
+            <td rowspan="2">41882835</td> 
             <td>Luis Chocce</td>
             <td>38</td>
         </tr>
         <!-- Tercera fila -->
         <tr>
-            <td>41263598</td>
             <td>Xxxxx xxxxxx</td>
             <td>22</td>
+        </tr>
+        <!-- Cuarta fila -->
+        <tr>
+            <td>01234567</td>
+            <td>Xxxxx xxxxxx</td>
+            <td>21</td>
+        </tr>
+        <tr>
+            <td>32584621</td>
+            <td colspan="2">Jaime Farfan</td>
+       
         </tr>
 
 

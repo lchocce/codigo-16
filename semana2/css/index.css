@@ -1,0 +1,73 @@
+h1 {
+    /* font-familiy*/
+    /* que pasa si la fuente no esxiste */
+    /* en css tenemos la opcion de poner varios tipos de letra */
+    /* para que, si la primera no existe css busque en la segunda y asi consecutivamente*/
+    font-family: apple-system, helvelica, arial, sans;
+    font-size: 45px;
+    /* font-size también puede recibir números del
+    100 - 900 */
+    font-weight: 100;
+    /* !importante: en font-weight no se usa unidades de medida */
+}
+
+.parrafo {
+    font-family: "Dank Mono", monospace;
+    /* font-size valor numerico para el tamaño de las letras en px */
+    font-size: 63px;
+    font-weight: bold;
+    /* hay tres opciones sobre el peso del texto
+    700 = bold
+    900 = bolder*/
+}
+/* Hexadecimal
+RGB ==> Red, Green and Blue
+HSL ==> Hue saturation lightness
+RGBA = Red, green, blue and alpha
+Alpha = Opacidad 0 - 1
+*/
+
+.link-a {
+    font-size: 32px;
+    font-family: "Dank mono";
+    /* Al poner "none" se quita el subrayado*/
+    text-decoration: none;
+    /* con la propiedad COLOR podemos cambiar el color de un texto*/
+    color: rgb(72, 36, 206);
+}
+body {
+    font-family: Arial, Helvetica, sans-serif;
+}
+ul {
+    background-color:rgba(53, 146, 239, 0.3)
+}
+.span-1 {
+    text-decoration: underline;
+    text-transform: uppercase;
+}
+.span-2 {
+    text-decoration: overline;
+}
+.span-3 {
+    text-decoration: line-through;
+    text-transform: uppercase;
+}
+.span-4 {
+    text-decoration: line-through;
+    text-decoration-color: rgb(207, 37, 37);
+}
+.span-5 {
+    text-decoration: overline;
+    background-color: #0ba;
+    text-decoration-color: white;
+}
+.span-6 {
+    color: #fff;
+    text-decoration: underline;
+    background-color: rgb(163, 106, 218);
+    text-decoration-color: rgb(255, 183, 0);
+    /* lowercase para letras minúsculas*/
+    /* uppercase = mayúsculas */
+    /*Capitalize = Priemra letra en mayúscula*/
+    text-transform: lowercase;
+}

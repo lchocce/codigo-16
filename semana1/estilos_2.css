@@ -1,0 +1,31 @@
+/* prioridad 5 (tag) */
+p {
+    color: red;
+    font-weight: bold;
+    font-size: 20px;
+    text-decoration: underline;
+}
+
+/* prioridad 4 (class)*/
+.par {
+    color: blue;
+}
+
+/*prioridad 3 (tag + class)*/
+p.par {
+    color: purple;
+}
+
+/*prioridad 2*/
+#p2 {
+    color: green;
+}
+/* prioridad 1 (tag + id */
+p#p2 {
+    color: orange;
+}
+
+/*prioridad 0 (class + id) */
+.par#p2 {
+    color: pink;
+}
