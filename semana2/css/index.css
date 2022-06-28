@@ -3,11 +3,12 @@ h1 {
     /* que pasa si la fuente no esxiste */
     /* en css tenemos la opcion de poner varios tipos de letra */
     /* para que, si la primera no existe css busque en la segunda y asi consecutivamente*/
-    font-family: apple-system, helvelica, arial, sans;
+    font-family: "Noto Sans";
     font-size: 45px;
     /* font-size también puede recibir números del
     100 - 900 */
-    font-weight: 100;
+    font-weight: 400;
+    text-decoration: underline;
     /* !importante: en font-weight no se usa unidades de medida */
 }
 
@@ -43,7 +44,7 @@ ul {
 }
 .span-1 {
     text-decoration: underline;
-    text-transform: uppercase;
+    text-transform: uppercasegit
 }
 .span-2 {
     text-decoration: overline;
@@ -70,4 +71,29 @@ ul {
     /* uppercase = mayúsculas */
     /*Capitalize = Priemra letra en mayúscula*/
     text-transform: lowercase;
+}
+
+/*Para que CSS pueda leer una fuente desde un archivo
+ponemos @font-face esto nos permite cargar una fuente
+externa y darle nombre para su uso*/
+
+/* El font-family puede ser cualquier combre, es una 
+buena práctica nombrarla por su nombre oficial */
+
+@font-face {
+    /* En este caso font-family es el nombre de la fuente*/
+    font-family: RobotoMono;
+    /*Es el lugar donde esta alojado la fuente*/
+    src: url(../fonts/RobotoMono-VariableFont_wght.ttf);
+}
+
+@font-face {
+    font-family: RobotoMono-Italic;
+    src: url(../fonts/RobotoMono-Italic-VariableFont_wght.ttf);
+}
+.title-2 {
+    font-family:"RobotoMono" ;
+}
+.parrafo-2 {
+    font-family: "RobotoMono-Italic" ;
 }
