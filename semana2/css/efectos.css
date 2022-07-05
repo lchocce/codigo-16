@@ -1,0 +1,80 @@
+body {
+    background-color: rgb(201, 236, 225);
+}
+
+#contenedor {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right, red 33%, white 33%, white 66%, red 66%);
+    margin: auto;      
+    /*Margin auto se acomoda al tamano del body
+    da margenes iguales*/
+}
+
+#contenedor:hover {
+    background: linear-gradient(to top, red 33%, white 33%, white 66%, red 66%);
+    box-shadow: none;
+}
+
+.sombra {
+    box-shadow: -20px -20px 10px -10px black;
+    /*1er valor = +x
+    2do valor = -Y
+    3er valor = blur (difuminación)
+    4to valor = spread (propagación)
+    5to valor = color */
+      
+}
+
+.sombra_texto {
+    text-shadow: 20px 20px 5px brown;
+    /*text-shadow tiene cuatro parámetros
+    no tiene spread (propagación)*/
+}
+
+#contenedor_2 {
+    width: 200px;
+    height: 200px;
+    background: linear-gradient(to right, red 33%,white 33%, white 66%, red 66%);
+    margin: auto;        
+    /*Margin auto se acomoda al tamano del body
+    da margenes iguales*/
+}
+
+.sombra_2 {
+    box-shadow: 20px 20px 0px -10px rgb(83, 3, 3);
+    /*1er valor = +x
+    2do valor = -Y
+    3er valor = blur (difuminación)
+    4to valor = spread (propagación)
+    5to valor = color */
+      
+}
+.sombra_texto_2 {
+    text-shadow: 20px 20px 5px rgb(218, 5, 5);
+}
+
+#circulo {
+    width: 200px;
+    height: 200px;
+    /*background-color: blue;*/
+    background: radial-gradient(red, white, red);
+    margin: 60px auto;
+    border-radius: 100px;
+    filter: blur(10px) opacity(0.45);
+}
+
+#circulo:hover {
+    background: none;
+    background-color: blue;
+    filter: none;
+}
+
+h1 {
+    border: 1px black solid;
+    border-radius: 10px;
+    text-align: center;
+}
+h1:hover {
+    text-decoration: underline;
+}
