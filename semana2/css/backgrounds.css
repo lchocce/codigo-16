@@ -1,0 +1,36 @@
+body {
+    font-family: verdana;
+}
+
+.bg {
+    border: solid;
+    height: 300px;
+}
+
+.color-red  {
+    background-color: red;
+}
+
+.color-green {
+    background-color: green;
+}
+
+.bg-img {
+    background: url(../../semana1/images/png-transparent-praying-woman-indian-flag-sticker-indian-cuisine-namaste-india-indian-restaurant-chicken-tikka-masala-atithi-devo-bhava-welcome-food-india-world.png);
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.bg-img-27 {
+    background: url(../../semana1/images/278424122_7091981577538734_6512151618319704994_n.jpg);
+    /*En este caso el alto lo da la imagen*/
+    height: 500px;
+    /*Estamos diciendo que esta div tenga
+    500px*/
+    background-size: cover;
+    /*cover = se acomoda al ancho*/
+    background-position: center;
+    /*Esto indica que queremos mostrar la parte
+    central de la imagen, se acomoda*/
+    background-repeat: no-repeat;
+    /*tratar de poner siempre no repeat*/
+}

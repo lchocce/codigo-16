@@ -1,0 +1,99 @@
+.bg-box {
+    height: 500px;
+    width: 500px;
+    background-color: red;
+    position: relative;
+    /*position = pse puede usar
+    !top
+    !left
+    !right
+    !bottom
+    solo se usa al agregar "position"
+    */
+    left: 100px;
+    top: 100px;
+}
+
+.padre {
+    width: 500px;
+    height: 500px;
+    background-color: aqua;
+    position: relative;
+}
+/* El hijo al no tener padre toma al body como padre
+no importa si esta dentro de un DIV, al activar el "position
+: abosolute" automaticamente va a buscar al primer relative que encuentre
+o tomara el body como referencia */
+.hijo   {
+    width: 100px;
+    height: 100px;
+    background-color: black;
+    position: absolute;
+    /* right: 0px; */
+    /* bottom: 0%; */
+    top: calc(50% - 50px);
+    left: calc(50% - 50px)
+}
+
+/* bandera*/
+
+.green  {
+    background-color: green;
+    height: 100vh;
+    width: 30%;
+    display: inline;
+}
+.red {
+    background-color: red;
+    height: 100vh;
+    width: 70%;
+}
+
+/*La clase BANDERA es el DIV contenedor y debe ocupar toda
+la pantalla*/
+
+/*vh: viewport height es una unidad de medida, el rango va 
+de 0 al infinito*/
+/*si ponemos un DIV que vale 200vh == a que el DIV ocupe
+basicamente el alto de 2 pantallas*/
+
+.bandera {
+    height: 100vh;
+    border: solid;
+    /*para que se pueda mostrar contenido detras de este 
+    elemento vamos a poner un position relative en este div*/
+    position: relative;
+}
+
+.green {
+    height: 100vh;
+    background-color: green;
+    /*Un DIV ocupa el 100% toDA LA PANTALLA*/
+    /*vh es de forma vertical*/
+    width: 43%;
+    float: left;
+}
+
+.red {
+    height: 100vh;
+    background-color: red;
+    width: 57%;
+    float: right;
+}
+
+
+.escudo {
+    background: url(../../semana1/images/Vector-PNG-File.png);
+    /*se tiene que agregar altura para que se muestre el contenido
+    debido a que el DIV tiene como altura 0px*/
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 200px;
+    width: 200px;
+    /*al ser relativo no tiene una base y a que poner un width para que se muestre la imagen*/
+    position: absolute;
+    top: calc(50% - 100px);
+    left: calc(43% - 100px); 
+    /* este ejemplo se acomoda a los diferentes tipos
+    de pantalla, pero no se considera responsive*/   
+}

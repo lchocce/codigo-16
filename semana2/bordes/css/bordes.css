@@ -1,0 +1,90 @@
+body {
+    margin-left: 40px;
+    margin-right: 40px;
+}
+
+p {
+    text-align: center;
+    font-weight: bold;
+    font-size: 1.5em;
+}
+
+h1 {
+    font-size: 2em;
+    /*usamos em como un  factor que multifica,
+    en caso del ejemplo al font-size padre (heredado)
+    por el valor propuesto, en este caso x 2, 
+    tambien puede ser = 0.5*/
+    text-align: center;
+}
+.solid {
+    border-style: solid;
+    border-color: aqua;
+    border-width: 5px;
+}
+.dashed {
+    border-style: dashed;
+    border-color: blue;
+    border-width: 5px;
+    font-size: 20px;
+    font-weight: bold;
+}
+.tipo_3 {
+    border-style: dotted;
+    border-color: blueviolet;
+}
+
+.tipo_4 {
+    border-style: double;
+    border-color: brown;
+}
+
+.tipo_5{
+    border-style: groove;
+    border-color: cadetblue;
+}
+
+.tipo_6 {
+    border-style: hidden;
+}
+
+.tipo_7 {
+    border-style: inherit;
+    border-color: crimson;
+}
+
+.tipo_8 {
+    border-style: initial;
+    border-color: darkslategrey;
+}
+
+/* esconde las caracteristicas heredadas = hidden*/
+#bnuevo:hover {
+    border-style: hidden;
+    color: blue;
+}
+
+.dotted {
+    border:3px dotted blue
+    /*los tres valores pueden ir en cualquier valor
+    inlcuso un background*/
+    /*se abrevió border-width; border-style; border-color*/
+    /*funciona para border y font, tiene un orden*/
+}
+
+/*border solo para un lado, agregando -left o -right
+depende a que lado*/
+.left_solid {
+    border-right: solid red 2px;
+}
+
+.right_dotted {
+    border-top: dotted rgb(11, 8, 182) 2px;
+}
+.small {
+    font-size: 0.6em;
+    /*En este caso 0.6*20= 12px*/
+}
+/*El orden en las hojas de estilos es importante y 
+repercute en las prioridades, ejemplo cuando hay duplicidad,
+funcionará el último*/
