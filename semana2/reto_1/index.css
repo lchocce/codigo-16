@@ -1,0 +1,42 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: "outfit" sans-serif;
+}
+
+.contenedor {
+    background-color: white;
+    height: 100vh;
+}
+
+.contenedor_interno {
+    width: 375px;
+    background-color: #fff;
+    text-align: center;
+    padding: 10px;
+    border-radius: 16px;
+    top: 50%;
+    position: relative;
+    margin: auto;
+    transform: translateY(-50%);
+}
+
+.contenedor_interno * {
+    margin-top: 16px;
+}
+
+img {
+    width: 345px;
+    border-radius: 16px;
+}
+
+h4 {
+    width: 60%;
+    margin: auto;
+}
+
+p {
+    width: 70%;
+    text-align: center;
+    margin: auto;
+}
