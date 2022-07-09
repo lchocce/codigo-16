@@ -1,0 +1,98 @@
+body {
+    margin: 0;
+    padding: 0;
+    font-family: 'Open Sans', sans-serif;
+}
+
+.nav    {
+    height: 70px;
+    margin-top: 40px;
+    padding: 30px;
+}
+
+.logo {
+    float: left;
+}
+
+.logo img {
+    position: relative;
+    height: 40px;
+}
+
+.list-menu {
+    float: right;
+}
+
+.list-menu ul li {
+    display: inline;
+    padding: 20px;
+    color: rgb(88, 91, 137);
+    font-weight: 400;
+}
+
+.container-welcome {
+    height: 90vh;
+    padding: 30px;
+    margin-top: 40px;
+}
+
+
+.container-welcome-left {
+    float: left;
+}
+
+.container-welcome-left h1 {
+    width: 50%;
+    font-weight: bold;
+}
+
+.container-welcome-left p {
+    width: 50%;
+}
+/*solo afecta a los inputs de tipo email*/
+input[type="email"] {
+    padding: 10px;
+    width: 300px;
+}
+
+button {
+    background-color: rgb(48, 101, 248);
+    color: #fff;
+    border: none;
+    padding: 13px;
+    border-radius: 4px;
+    width: 200px;
+}
+/*dentro de .container-welcome-left tenemos tres div*/
+/*sabemos que el 1ro es el padre, por ende podemos usar 
+first-child, toma el primero*/
+
+.container-form {
+    width: 50%;
+    height: 40px;
+}
+.container-form div:first-child {
+    border: solid 1px;
+    float: left;
+}
+
+.container-form div:last-child {
+   
+    float: right;
+}
+
+.container-welcome-right {
+    float: right;
+    float: right;
+}
+
+.container-description {
+    height: 100vh;
+}
+
+.container-wave {
+    background: url(./images/bg-curve-desktop.svg);
+    height: 10vh;
+    background-repeat: no-repeat;
+    background-size: cover;
+}
